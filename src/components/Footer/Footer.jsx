@@ -42,21 +42,33 @@ function Footer() {
       <div className="flex justify-between items-center text-lightGrey">
         {/* logo section */}
         <Logo />
-        {/* navigate section */}
-        <div className="nav-items flex gap-5 capitalize justify-center items-left">
-          {navItems.map((item) => (
-            <ScaleDiv key={item.name}>
-              <NavLink
-                key={item.name}
-                to={item.slug}
-                className={({ isActive }) =>
-                  isActive ? 'border-b-2 border-profBlue pb-2' : ''
-                }
-              >
-                {item.name}
-              </NavLink>
-            </ScaleDiv>
-          ))}
+
+        {/* services section */}
+        <div className="services w-[21.5%] flex flex-col gap-5">
+          <div className="text-2xl uppercase font-semibold border-l-2 pl-3">
+            services
+          </div>
+          <div className="flex flex-col gap-1 text-white">
+            {services.map((service) => (
+              <div className="flex gap-1" key={service}>
+                &gt; {service}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* resources section */}
+        <div className="services w-[19.2%] flex flex-col gap-5">
+          <div className="text-2xl uppercase font-semibold border-l-2 pl-3">
+            resources
+          </div>
+          <div className="flex flex-col gap-1 text-white">
+            {resources.map((service) => (
+              <div className="flex gap-1" key={service}>
+                &gt; {service}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       {/* tier-3 */}

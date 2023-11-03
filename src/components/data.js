@@ -53,9 +53,7 @@ const resources = [
   'Credit Card',
   'C.C. and O.D. Loan',
   'Gold Loan',
-  'Bad Credit CIBIL Score Loan',
-  'Banking Ombudsman',
-  'RBI Complaints Against Banks',
+  'Bad Credit CIBIL Score',
 ];
 
 export { navItems, socialLinks, services, resources };
