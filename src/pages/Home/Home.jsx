@@ -4,7 +4,7 @@ import { Container } from '../../components';
 function Home() {
   return (
     <Container>
-      <div>Home</div>
+      <div className='mt-28'>Home</div>
     </Container>
   );
 }
