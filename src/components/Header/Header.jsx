@@ -1,8 +1,7 @@
 import React from 'react';
-import { Logo } from '../../assets';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { navItems } from '../data';
-import { Button, ScaleDiv } from '../index';
+import { Button, ScaleDiv, Logo } from '../index';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
 
@@ -13,9 +12,7 @@ function Header() {
   return (
     <header className="px-5 lg:px-24 py-5 bg-mateBlack text-white flex items-center justify-between font-Poppins fixed top-0 w-full">
       {/* logo | left-side */}
-      <div className="logo w-[40%] md:w-[22%] lg:w-[15%]">
-        <img src={Logo} alt="company-logo" />
-      </div>
+      <Logo />
       {/* nav-items | right-side */}
       <div className="right gap-16 items-center hidden lg:flex">
         <div className="nav-items flex gap-8 capitalize">

@@ -9,7 +9,7 @@ function BurgerMenu() {
 
   return (
     <div
-      className={`bg-mateBlack absolute h-[50vh] w-full opacity-70 flex justify-center mt-20 font-Poppins ${
+      className={`bg-mateBlack absolute h-[50vh] w-full opacity-70 flex justify-center font-Poppins z-10 -mt-5 ${
         state ? 'block' : 'hidden'
       }`}
     >
