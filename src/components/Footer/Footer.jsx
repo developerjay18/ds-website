@@ -1,26 +1,24 @@
 import React from 'react';
-import { Logo, ScaleDiv } from '../index';
-import { navItems, socialLinks, services, resources } from '../data';
+import { ScaleDiv } from '../index';
+import { navItems, socialLinks } from '../data';
 import { Link, NavLink } from 'react-router-dom';
+import { Logo, Gmail, PCall } from '../../assets';
 
 function Footer() {
   console.log(socialLinks);
   return (
-    <footer className="px-5 lg:px-24 py-5 bg-mateBlack text-white font-Poppins flex justify-between flex-col gap-10">
-      {/* tier-1 */}
-      <div className="flex justify-between">
-        {/* contact section and social icons section */}
-        <div className="flex justify-between text-lightGrey w-full">
-          <div className="flex flex-col gap-2 border-l-2 pl-4">
-            <div className="text-2xl uppercase font-semibold">call us now</div>
-            <div className="text-white">+91 9824336161</div>
+    <footer className="px-5 lg:px-24 py-5 bg-mateBlack font-Poppins flex justify-between gap-10 text-lightGrey flex-col">
+      <div className="upper-section flex justify-between gap-10">
+        {/* tier-1 */}
+        <div className="w-[33%] flex flex-col bg-[#333333] p-5 rounded-md">
+          <div className="image">
+            <img src={Logo} alt="compnay-logo" className="w-[47%]" />
           </div>
-          <div className="flex flex-col gap-2 border-l-2 pl-4">
-            <div className="text-2xl uppercase font-semibold">
-              sent us message
-            </div>
-            <div className="text-white">decentsettelment@gmail.com</div>
-          </div>
+          <p className="mt-2 mb-7">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam nulla
+            recusandae quae consectetur autem distinctio magnam asperiores neque
+            velit explicabo!
+          </p>
           <div className="flex flex-col gap-2 border-l-2 pl-4">
             <div className="text-2xl uppercase font-semibold">follow us on</div>
             <div className="text-white flex gap-4">
@@ -37,62 +35,110 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
-      {/* tier-2 */}
-      <div className="flex justify-between items-center text-lightGrey">
-        {/* logo section */}
-        <Logo />
 
-        {/* services section */}
-        <div className="services w-[21.5%] flex flex-col gap-5">
-          <div className="text-2xl uppercase font-semibold border-l-2 pl-3">
-            services
-          </div>
-          <div className="flex flex-col gap-1 text-white">
-            {services.map((service) => (
-              <div className="flex gap-1" key={service}>
-                &gt; {service}
+        {/* tier-2 */}
+        <div className="w-[30%] flex flex-col gap-10 pt-5">
+          <div className="mail  flex gap-5 border-l-2 pl-2">
+            <div className="w-[10%]">
+              <img src={Gmail} alt="mail-icon" />
+            </div>
+            <div>
+              <div className="text-2xl uppercase font-semibold">
+                Email us Now
               </div>
-            ))}
+              <div>decentsettelment@gmail.com</div>
+            </div>
+          </div>
+          <div className="nav-items flex flex-col gap-4 capitalize">
+            <h2 className="capitalize text-2xl font-semibold border-b-2 w-1/2 pb-2">
+              Useful links
+            </h2>
+            <div className="flex flex-col gap-4">
+              {navItems.map((item) => (
+                <ScaleDiv key={item.name} className={'pl-2'}>
+                  <NavLink
+                    key={item.name}
+                    to={item.slug}
+                    className={({ isActive }) =>
+                      isActive ? 'border-b-2 border-profBlue pb-2' : ''
+                    }
+                  >
+                    &gt; {item.name}
+                  </NavLink>
+                </ScaleDiv>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* resources section */}
-        <div className="services w-[19.2%] flex flex-col gap-5">
-          <div className="text-2xl uppercase font-semibold border-l-2 pl-3">
-            resources
-          </div>
-          <div className="flex flex-col gap-1 text-white">
-            {resources.map((service) => (
-              <div className="flex gap-1" key={service}>
-                &gt; {service}
+        {/* tier-3 */}
+        <div className="w-[33%] pt-5 flex flex-col gap-10">
+          <div className="call  flex gap-5 border-l-2 pl-2">
+            <div className="w-[10%]">
+              <img src={PCall} alt="call-icon" />
+            </div>
+            <div>
+              <div className="text-2xl uppercase font-semibold">
+                call us Now
               </div>
-            ))}
+              <div>+91 9824336161</div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-5">
+            <h2 className="capitalize text-2xl font-semibold border-b-2 w-2/3 pb-2">
+              Message us now
+            </h2>
+            <div className="form">
+              <form
+                action="#"
+                method="post"
+                className="flex flex-col gap-3 w-[80%] text-mateBlack"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className=" p-2 rounded-full"
+                  placeholder="email address"
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="2"
+                  className=" p-3 rounded-full"
+                >
+                  Message
+                </textarea>
+                <button
+                  type="submit"
+                  className="capitalize rounded-full w-1/4 ml-1 px-1 py-2 bg-profBlue hover:bg-darkProfBlue text-white"
+                >
+                  send
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      {/* tier-3 */}
-      <div className="copyrights flex justify-between items-center">
-        <div className="flex flex-row items-center gap-3">
-          <p>@decentsettelment.com All Rights reserved.</p>
-          <div className="flex gap-3 text-profBlue">
-            <span className="hover:text-white border-b-2 hover:border-b-2 cursor-pointer">
-              Terms and Conditions
-            </span>
-            <span className="text-white">|</span>
-            <span className="capitalize hover:text-white border-b-2 hover:border-b-2 cursor-pointer">
-              Privacy policy
-            </span>
-          </div>
+      <div className="lower-section flex justify-between">
+        <div className="flex gap-5">
+          <span>@decentsettelment.com All Rights reserved.</span>
+          <span className="flex gap-3">
+            <Link className="text-profBlue hover:text-white">
+              Terms and conditions
+            </Link>
+            <span>|</span>
+            <Link className="text-profBlue hover:text-white">
+              Privacy Policy
+            </Link>
+          </span>
         </div>
-
         <div className="">
           Developed by{' '}
-          <Link to={'https://www.jayraiweb.com'}>
-            <span className="text-profBlue border-b-2 hover:text-white cursor-pointer">
-              JayRai Web
-            </span>
-          </Link>
+          <span>
+            <Link className="text-profBlue hover:text-white">JayRai web</Link>
+          </span>
         </div>
       </div>
     </footer>
