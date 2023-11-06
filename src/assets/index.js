@@ -5,5 +5,6 @@ import YoutubeIcon from './youtube.svg';
 import FBIcon from './facebook.svg';
 import Gmail from './gmail.svg';
 import PCall from './pcall.png';
+import DSVideo from "./DS-video.mp4"
 
-export { Logo, WPIcon, InstaIcon, YoutubeIcon, FBIcon, Gmail, PCall };
+export { Logo, WPIcon, InstaIcon, YoutubeIcon, FBIcon, Gmail, PCall,DSVideo };
