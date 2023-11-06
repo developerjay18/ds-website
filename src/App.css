@@ -3,3 +3,11 @@
   background-size: cover;
   background-position: center;
 }
+
+.bg-gradient {
+  background-image: url('./assets/process/process-gradient.png');
+}
+
+.cloudy-wavy {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
