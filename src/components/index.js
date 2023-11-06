@@ -7,5 +7,6 @@ import BurgerMenu from './BurgerMenu';
 import Logo from './Logo';
 import HeroSection from './HeroSection/HeroSection';
 import ProcessSection from './ProcessSection/ProcessSection';
+import ServiceSection from './ServiceSection/ServiceSection';
 
-export { Header, Footer, Container, Button, ScaleDiv, BurgerMenu, Logo,HeroSection,ProcessSection };
+export { Header, Footer, Container, Button, ScaleDiv, BurgerMenu, Logo,HeroSection,ProcessSection ,ServiceSection};
