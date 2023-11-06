@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Button({ children }) {
+function Button({ children,className }) {
   return (
-    <button className="capitalize bg-profBlue px-5 py-3 rounded-md hover:bg-darkProfBlue">
+    <button className={`capitalize bg-profBlue px-5 py-3 rounded-md hover:bg-darkProfBlue ${className}`}>
       {children}
     </button>
   );
