@@ -10,7 +10,7 @@ function Header() {
   const state = useSelector((state) => state.menuClick);
 
   return (
-    <header className="px-5 lg:px-24 py-5 bg-mateBlack text-white flex items-center justify-between font-Poppins fixed top-0 w-full">
+    <header className="px-5 lg:px-24 py-5 bg-mateBlack text-white flex items-center justify-between font-Poppins fixed top-0 w-full z-10">
       {/* logo | left-side */}
       <Logo />
       {/* nav-items | right-side */}
