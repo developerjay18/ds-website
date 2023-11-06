@@ -4,6 +4,7 @@ import {
   HeroSection,
   ProcessSection,
   ServiceSection,
+  StatSection
 } from '../../components';
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       <HeroSection />
       <ProcessSection />
       <ServiceSection />
+      <StatSection/>
     </Container>
   );
 }
