@@ -98,7 +98,7 @@ function Footer() {
                   type="email"
                   name="email"
                   id="email"
-                  className=" p-2 rounded-full"
+                  className=" p-2 rounded-lg"
                   placeholder="email address"
                 />
                 <textarea
@@ -106,13 +106,13 @@ function Footer() {
                   id="message"
                   cols="30"
                   rows="2"
-                  className=" p-3 rounded-full"
+                  className=" p-3 rounded-lg"
                 >
                   Message
                 </textarea>
                 <button
                   type="submit"
-                  className="capitalize rounded-full w-1/4 ml-1 px-1 py-2 bg-profBlue hover:bg-darkProfBlue text-white"
+                  className="capitalize rounded-lg w-1/4 ml-1 px-1 py-2 bg-profBlue hover:bg-darkProfBlue text-white"
                 >
                   send
                 </button>
