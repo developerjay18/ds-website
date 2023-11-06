@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container } from '../../components';
+import { Container,HeroSection } from '../../components';
 
 function Home() {
   return (
     <Container>
-      <div className='mt-28'>Home</div>
+      <HeroSection/>
     </Container>
   );
 }
