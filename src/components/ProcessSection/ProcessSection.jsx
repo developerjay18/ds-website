@@ -10,11 +10,15 @@ function ProcessSection() {
       {/* heading section */}
       <div className="px-20 flex flex-col gap-8">
         <div
-          className="text-4xl font-semibold flex flex-col justify-center items-center gap-4 cursor-pointer"
+          className="text-4xl font-bold flex flex-col justify-center items-center gap-4 cursor-pointer"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
-          <h2 className={`${hover ? 'text-profBlue' : 'text-mateBlack'}`}>
+          <h2
+            className={`${
+              hover ? 'text-profBlue' : 'text-mateBlack'
+            } capitalize`}
+          >
             How our debt settlement relief program works?
           </h2>
           <div
