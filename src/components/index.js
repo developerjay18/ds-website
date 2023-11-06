@@ -8,5 +8,18 @@ import Logo from './Logo';
 import HeroSection from './HeroSection/HeroSection';
 import ProcessSection from './ProcessSection/ProcessSection';
 import ServiceSection from './ServiceSection/ServiceSection';
+import StatSection from './StatSection/StatSection';
 
-export { Header, Footer, Container, Button, ScaleDiv, BurgerMenu, Logo,HeroSection,ProcessSection ,ServiceSection};
+export {
+  Header,
+  Footer,
+  Container,
+  Button,
+  ScaleDiv,
+  BurgerMenu,
+  Logo,
+  HeroSection,
+  ProcessSection,
+  ServiceSection,
+  StatSection,
+};
