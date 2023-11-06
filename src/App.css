@@ -1,0 +1,5 @@
+.bg-hero {
+  background-image: url('./assets/media/hero-image.png');
+  background-size: cover;
+  background-position: center;
+}
