@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container,HeroSection } from '../../components';
+import { Container, HeroSection, ProcessSection } from '../../components';
 
 function Home() {
   return (
     <Container>
-      <HeroSection/>
+      <HeroSection />
+      <ProcessSection />
     </Container>
   );
 }

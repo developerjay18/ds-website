@@ -45,7 +45,7 @@ function HeroSection() {
         <div className="right w-[40%] flex justify-center">
           <video
             controls
-            className="w-[60%] rounded-xl hover:shadow-lg hover:shadow-profBlue"
+            className="w-[60%] rounded-3xl hover:shadow-lg hover:shadow-profBlue"
             autoPlay
           >
             <source src={DSVideo} type="video/mp4" />
