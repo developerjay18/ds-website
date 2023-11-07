@@ -6,6 +6,7 @@ import {
   ServiceSection,
   StatSection,
   FAQsSection,
+  SliderSection
 } from '../../components';
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       <ServiceSection />
       <StatSection />
       <FAQsSection />
+      <SliderSection/>
     </Container>
   );
 }
