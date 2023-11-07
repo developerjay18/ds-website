@@ -9,6 +9,7 @@ import HeroSection from './HeroSection/HeroSection';
 import ProcessSection from './ProcessSection/ProcessSection';
 import ServiceSection from './ServiceSection/ServiceSection';
 import StatSection from './StatSection/StatSection';
+import FAQsSection from './FAQsSection/FAQsSection';
 
 export {
   Header,
@@ -22,4 +23,5 @@ export {
   ProcessSection,
   ServiceSection,
   StatSection,
+  FAQsSection,
 };
