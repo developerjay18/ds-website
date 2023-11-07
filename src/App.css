@@ -11,3 +11,20 @@
 .cloudy-wavy {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
+
+.faq-answer {
+  max-height: 0;
+  transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+  background-color: #f0f0f0;
+  overflow: hidden;
+  will-change: max-height;
+  transform-origin: top;
+  transition-duration: 0.5s;
+}
+
+.faq-answer.open {
+  max-height: 800px; /* Adjust the height to your preference */
+  transform: scaleY(1);
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
