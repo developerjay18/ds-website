@@ -11,6 +11,7 @@ import ServiceSection from './ServiceSection/ServiceSection';
 import StatSection from './StatSection/StatSection';
 import FAQsSection from './FAQsSection/FAQsSection';
 import SliderSection from './SliderSection/SliderSection';
+import InfoSection from './InfoSection/InfoSection';
 
 export {
   Header,
@@ -25,5 +26,6 @@ export {
   ServiceSection,
   StatSection,
   FAQsSection,
-  SliderSection
+  SliderSection,
+  InfoSection,
 };
