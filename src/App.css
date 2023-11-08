@@ -10,12 +10,28 @@
   background-position: center;
 }
 
+.bg-gradient-two {
+  background-image: url('./assets/gr-black-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-gradient {
+  background-image: url('./assets/gr-black.svg');
+  background-size: cover;
+  background-position: center;
+}
+
 .glassy-div {
   background-color: rgba(255, 255, 255, 0.123);
   backdrop-filter: blur(10px) saturate(180%);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.bg-glass{
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a glassy effect */
 }
 
 .cloudy-wavy {
