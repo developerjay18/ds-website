@@ -8,6 +8,7 @@ import {
   FAQsSection,
   SliderSection,
   InfoSection,
+  ContactSection,
 } from '../../components';
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <FAQsSection />
       <SliderSection />
       <InfoSection />
+      <ContactSection />
     </Container>
   );
 }
