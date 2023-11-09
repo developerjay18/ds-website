@@ -39,7 +39,7 @@ function StatSection() {
     {
       number: '100',
       extension: '%',
-      title: 'years of experience',
+      title: 'clients satisfied',
     },
   ];
 

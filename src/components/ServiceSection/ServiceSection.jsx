@@ -28,7 +28,7 @@ function ServiceSection() {
         </div>
       </div>
       {/* cards section */}
-      <div className="flex justify-between">
+      <div className="flex flex-col">
         {data.map((dataItem) => (
           <ServiceCard
             key={dataItem.title}
