@@ -7,7 +7,7 @@ import { Logo, Gmail, PCall } from '../../assets';
 function Footer() {
   console.log(socialLinks);
   return (
-    <footer className="px-5 lg:px-24 py-5 bg-mateBlack font-Poppins flex justify-between gap-10 text-lightGrey flex-col">
+    <footer className="px-5 lg:px-24 py-5 font-Poppins flex justify-between gap-10 text-lightGrey flex-col bg-black-gr">
       <div className="upper-section flex justify-between gap-10">
         {/* tier-1 */}
         <div className="w-[33%] flex flex-col bg-[#333333] p-5 rounded-md">

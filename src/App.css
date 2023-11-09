@@ -27,6 +27,8 @@
     rgba(0, 0, 0, 0.93) 11.2%,
     rgb(63, 61, 61) 78.9%
   );
+  opacity: 1;
+  background-color: black;
 }
 
 .glassy-div {
