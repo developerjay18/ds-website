@@ -7,6 +7,7 @@ import Gmail from './gmail.svg';
 import PCall from './pcall.png';
 import DSVideo from './DS-video.mp4';
 import ContactCall from './contact-call.svg';
+import ListImage from './list.jpeg';
 
 export {
   Logo,
@@ -18,4 +19,5 @@ export {
   PCall,
   DSVideo,
   ContactCall,
+  ListImage,
 };
