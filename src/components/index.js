@@ -13,6 +13,7 @@ import FAQsSection from './FAQsSection/FAQsSection';
 import SliderSection from './SliderSection/SliderSection';
 import InfoSection from './InfoSection/InfoSection';
 import ContactSection from './ContactSection/ContactSection';
+import ListSection from './ListSection/ListSection';
 
 export {
   Header,
@@ -30,4 +31,5 @@ export {
   SliderSection,
   InfoSection,
   ContactSection,
+  ListSection,
 };

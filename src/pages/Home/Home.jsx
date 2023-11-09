@@ -9,6 +9,7 @@ import {
   SliderSection,
   InfoSection,
   ContactSection,
+  ListSection
 } from '../../components';
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
       <SliderSection />
       <InfoSection />
       <ContactSection />
+      <ListSection/>
     </Container>
   );
 }
