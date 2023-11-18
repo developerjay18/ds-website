@@ -51,7 +51,7 @@ const FAQsSection = () => {
               </div>
               <div
                 className={`faq-answer${
-                  selected === index ? ' open' : ''
+                  selected === index ? ' open pb-5' : ''
                 } pl-5`}
               >
                 {item.answer}

@@ -3,37 +3,18 @@ import React from 'react';
 function ServiceCard({ url, title, content }) {
   return (
     <>
-      {/* left one */}
-      <div className="w-full flex justify-center items-center gap-5 cursor-pointer border-r-2 border-b-2 rounded-full">
-        <div className="image w-[80%] overflow-hidden">
+      <div className="w-[45%] shadow-lg flex flex-col justify-center py-5 items-center gap-5 cursor-pointer hover:shadow-profBlue rounded-lg bg-[#eeeeee]">
+        <div className="w-[90%] h-[90%] overflow-hidden">
           <img
             src={url}
-            alt="service-image"
-            className="rounded-l-full min-h-[100%] object-cover"
+            alt="image-url"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div className="px-2 h-full flex flex-col gap-5">
-          <div className="title flex items-center h-[10%] font-semibold text-3xl capitalize hover:text-profBlue">
-            {title}
-          </div>
-          <div className="desc h-[50%] pb-2 text-sm">{content}</div>
+        <div className="">
+          <h3 className="font-bold text-2xl capitalize">{title}</h3>
         </div>
-      </div>
-      {/* right one */}
-      <div className="w-full flex justify-center items-center gap-5 cursor-pointer border-l-2 rounded-full pl-5 border-b-2">
-        <div className="px-2 h-full flex flex-col gap-5">
-          <div className="title flex items-center h-[10%] font-semibold text-3xl capitalize hover:text-profBlue">
-            {title}
-          </div>
-          <div className="desc h-[50%] pb-2 text-sm">{content}</div>
-        </div>
-        <div className="image w-[80%] overflow-hidden">
-          <img
-            src={url}
-            alt="service-image"
-            className="rounded-r-full min-h-[100%] object-cover"
-          />
-        </div>
+        <p className="text-gray-500 px-5">{content}</p>
       </div>
     </>
   );

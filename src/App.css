@@ -59,7 +59,7 @@
 }
 
 .faq-answer.open {
-  max-height: 800px; /* Adjust the height to your preference */
+  max-height: 850px; /* Adjust the height to your preference */
   transform: scaleY(1);
   transition: ease-in-out;
   transition-duration: 0.5s;

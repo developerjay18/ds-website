@@ -1,51 +1,46 @@
-// import * as ProfileImg from '../assets/reviews';
+import { Yash } from '../../assets/reviews';
 
 const data = [
   {
-    imageUrl: '../../assets/media/hero-image.png',
-    name: 'ravi rajbhar',
-    profession: 'Founder of clothing brand',
-    location: 'banglore',
+    imageUrl: Yash,
+    location: 'surat',
     review:
-      'Your website development skills are truly remarkable. The animated features on our site have captivated our visitors and boosted our engagement significantly.',
+      'I am truly grateful to Decent Settlement for helping me settle my personal loans. I never thought it was possible! In less than 6 months, I am now debt-free. I am thankful for a decent settlement.',
   },
   {
-    imageUrl: '../../assets/media/hero-image.png',
-    name: 'yash sharma',
-    profession: 'digital marketer',
+    imageUrl: Yash,
     location: 'ahmedabad',
-    review:
-      'Our business witnessed an incredible transformation after you developed our website. Your animated designs played a significant role in boosting our revenue by 5x!',
+    review: `I'm really grateful to Decent Settlement for helping me clear my personal loans. It seemed impossible, but in less than 10 months, I'm now debt-free. Thanks, Decent Settlement!`,
   },
   {
-    imageUrl: '../../assets/media/hero-image.png',
-    name: 'mohini sharma',
-    profession: 'google ads expert',
-    location: 'rajasthan',
-    review: `You've worked wonders for our business with your website development services. Our site is not just functional; it's a visual masterpiece thanks to your animated designs`,
+    imageUrl: Yash,
+    location: 'gandhinagar',
+    review: `I was constantly harassed by recovery agents for 5 months, and then Decent Settlement came to my rescue! Their program is a lifesaver for heavy debt, and I'm thankful they prevented my bankruptcy`,
   },
   {
-    imageUrl: '../../assets/media/hero-image.png',
-    name: 'avinash pandey',
-    profession: 'accounting consultant',
-    location: 'punjab',
-    review:
-      'Your full stack development services are top-notch. The website you created for us is a work of art, and our business has flourished thanks to your expertise.',
+    imageUrl: Yash,
+    location: 'rajkot',
+    review: `Decent Settlement saved me from a money mess. Their team was like a guide, helping me step by step. Now, I don't owe anyone money, all thanks to them being super awesome!`,
   },
   {
-    imageUrl: '../../assets/media/hero-image.png',
-    name: 'madin bloch',
-    profession: 'web developer',
-    location: 'junagadh',
-    review:
-      'Working with you has been a pleasure, and the results speak for themselves. Your website development expertise has given our business an incredible boost',
+    imageUrl: Yash,
+    location: 'vadodara',
+    review: `Business loans were making me feel stuck, but Decent Settlement helped me get unstuck. They talked to the money people and got me a great deal. Really thankful for their quick and smart help!`,
   },
   {
-    imageUrl: '../../assets/media/hero-image.png',
-    name: 'yogesh sharma',
-    profession: 'Astrologer',
-    location: 'mumbai',
-    review: `Your website development services have been a game-changer for our online presence. We've witnessed a significant increase in leads and conversions since we launched our new site`,
+    imageUrl: Yash,
+    location: 'mehsana',
+    review: `Credit cards were confusing, but Decent Settlement helped me out! They talked to the money wizards and got my bills down. Now I'm on my way to a better money life, thanks to these cool folks!`,
+  },
+  {
+    imageUrl: Yash,
+    location: 'surendranagar',
+    review: `Closing loans made easy! Decent Settlement took care of everything. No headaches, no hassles. Super happy with their smooth and easy service!`,
+  },
+  {
+    imageUrl: Yash,
+    location: 'jamnagar',
+    review: `Had a problem with the bank? Decent Settlement filed a complaint for me! They know all the rules and fought for me. Big thanks for standing up for us regular folks!`,
   },
 ];
 

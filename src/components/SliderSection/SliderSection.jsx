@@ -52,7 +52,7 @@ function SliderSection() {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container mt-5 md:mt-10 w-full lg:w-auto"
+        className="swiper_container mt-5 md:mt-10 w-full lg:w-auto border"
       >
         {data.map((dataItem) => (
           <SwiperSlide

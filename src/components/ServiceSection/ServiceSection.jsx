@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ServiceCard from './ServiceCard';
 import data from './data.js';
+import { Button } from '../index.js';
 
 function ServiceSection() {
   const [hover, setHover] = useState(false);
@@ -28,7 +29,7 @@ function ServiceSection() {
         </div>
       </div>
       {/* cards section */}
-      <div className="flex flex-col">
+      <div className="flex flex-wrap justify-between gap-10">
         {data.map((dataItem) => (
           <ServiceCard
             key={dataItem.title}
@@ -38,6 +39,11 @@ function ServiceSection() {
           />
         ))}
       </div>
+
+      {/* button section */}
+      <Button className={`text-white w-[20%] mx-auto`}>
+        Book An appointment
+      </Button>
     </div>
   );
 }

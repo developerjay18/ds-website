@@ -34,7 +34,7 @@ function StatSection() {
     {
       number: '700',
       extension: '+',
-      title: 'trusted clinets',
+      title: 'trusted clients',
     },
     {
       number: '100',
@@ -58,8 +58,8 @@ function StatSection() {
             key={data.number}
           >
             {isVisible && (
-              <div className="flex flex-col justify-center items-center gap-3 md:py-5 lg:py-0">
-                <div className=" text-4xl lg:text-5xl text-gradient font-semibold ">
+              <div className="flex flex-col justify-center items-center gap-3 bg-black-gr text-white py-5 px-1 rounded-lg cursor-pointer">
+                <div className="text-4xl lg:text-[2.8rem] text-gradient font-semibold ">
                   <span>
                     <CountUp
                       start={0}
