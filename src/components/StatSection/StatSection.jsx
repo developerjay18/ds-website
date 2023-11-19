@@ -49,16 +49,16 @@ function StatSection() {
         initial={{ opacity: 0, scale: 0 }}
         animate={controls}
         transition={{ duration: 1 }}
-        className="w-full flex justify-between flex-col md:flex-row gap-12 md:gap-0"
+        className="w-full flex justify-between flex-col md:flex-row gap-12 md:gap-0 bg-black-gr rounded-lg"
       >
         {statsData.map((data) => (
           <div
             id="count-up-section"
-            className="w-full md:w-[50%] lg:w-[17%]"
+            className="w-full md:w-[50%] lg:w-[17%] "
             key={data.number}
           >
             {isVisible && (
-              <div className="flex flex-col justify-center items-center gap-3 bg-black-gr text-white py-5 px-1 rounded-lg cursor-pointer">
+              <div className="flex flex-col justify-center items-center gap-3  text-white py-5 px-1 rounded-lg cursor-pointer">
                 <div className="text-4xl lg:text-[2.8rem] text-gradient font-semibold ">
                   <span>
                     <CountUp

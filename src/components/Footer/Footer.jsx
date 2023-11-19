@@ -10,14 +10,15 @@ function Footer() {
     <footer className="px-5 lg:px-24 py-5 font-Poppins flex justify-between gap-10 text-lightGrey flex-col bg-black-gr">
       <div className="upper-section flex justify-between gap-10">
         {/* tier-1 */}
-        <div className="w-[33%] flex flex-col bg-[#333333] p-5 rounded-md">
+        <div className="w-[33%] flex flex-col bg-[#333333] p-5 rounded-md gap-2">
           <div className="image">
-            <img src={Logo} alt="compnay-logo" className="w-[47%]" />
+            <img src={Logo} alt="compnay-logo" className="w-[70%]" />
           </div>
           <p className="mt-2 mb-7">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam nulla
-            recusandae quae consectetur autem distinctio magnam asperiores neque
-            velit explicabo!
+            We&apos;re a modern fintech company aiming to help people in
+            financial trouble get away from their debts. we&apos;re dedicated to
+            creating a world where financial freedom is within reach for
+            everyone, irrespective of their debt load
           </p>
           <div className="flex flex-col gap-2 border-l-2 pl-4">
             <div className="text-2xl uppercase font-semibold">follow us on</div>
@@ -125,11 +126,17 @@ function Footer() {
         <div className="flex gap-5">
           <span>@decentsettelment.com All Rights reserved.</span>
           <span className="flex gap-3">
-            <Link className="text-profBlue hover:text-white">
+            <Link
+              to={'/terms-and-conditions'}
+              className="text-profBlue hover:text-white"
+            >
               Terms and conditions
             </Link>
             <span>|</span>
-            <Link className="text-profBlue hover:text-white">
+            <Link
+              to={'/privacy-policy'}
+              className="text-profBlue hover:text-white"
+            >
               Privacy Policy
             </Link>
           </span>
@@ -137,7 +144,12 @@ function Footer() {
         <div className="">
           Developed by{' '}
           <span>
-            <Link className="text-profBlue hover:text-white">JayRai web</Link>
+            <Link
+              to={'https://www.jayraiweb.com'}
+              className="text-profBlue hover:text-white"
+            >
+              JayRai web
+            </Link>
           </span>
         </div>
       </div>

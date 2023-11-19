@@ -14,6 +14,8 @@ import SliderSection from './SliderSection/SliderSection';
 import InfoSection from './InfoSection/InfoSection';
 import ContactSection from './ContactSection/ContactSection';
 import ListSection from './ListSection/ListSection';
+import PrivacyPolicy from './PrivacyPolicy';
+import TermsAndCond from './TermsAndCond';
 
 export {
   Header,
@@ -32,4 +34,6 @@ export {
   InfoSection,
   ContactSection,
   ListSection,
+  TermsAndCond,
+  PrivacyPolicy
 };

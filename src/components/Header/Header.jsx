@@ -5,12 +5,17 @@ import { Button, ScaleDiv, Logo } from '../index';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
 
-function Header() {
+function Header({ BG }) {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.menuClick);
 
   return (
-    <header className="px-5 lg:px-24 py-5 bg-transparent text-white flex items-center justify-between font-Poppins w-full">
+    <header
+      className={`
+      ${BG ? `${BG}` : 'bg-transparent'}
+          px-5 lg:px-24 py-5  text-white flex items-center justify-between font-Poppins w-full
+      `}
+    >
       {/* logo | left-side */}
       <Logo />
       {/* nav-items | right-side */}

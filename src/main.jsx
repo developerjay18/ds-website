@@ -9,7 +9,7 @@ import {
   Route,
   RouterProvider,
 } from 'react-router-dom';
-import { Home } from './pages/index.js';
+import { Home, PrivacyPolicyP, TermsAndConditionP } from './pages/index.js';
 
 import { Provider } from 'react-redux';
 import store from './store/store.js';
@@ -18,6 +18,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicyP />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditionP />} />
     </Route>
   )
 );

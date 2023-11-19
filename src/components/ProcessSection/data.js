@@ -14,7 +14,7 @@ const data = [
   {
     imageUrl: Image.Savings,
     title: 'save',
-    desc: `select a suitable way and make a formal agreement that's legally strong to look out for your interests and make settling debts easier.`,
+    desc: `Start saving money each month into an account you control. We will handle communication with your bank creditors to relieve your worries and stop any harassment.`,
   },
   {
     imageUrl: Image.Negotiate,

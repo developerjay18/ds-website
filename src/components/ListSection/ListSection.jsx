@@ -98,10 +98,10 @@ function ListSection() {
           <img src={Logo} alt="logo" className="" />
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maiores
-          ratione deserunt, voluptas beatae, cupiditate aliquid amet
-          reprehenderit architecto, saepe tenetur minima mollitia qui incidunt
-          tempore recusandae ipsam totam iusto.
+          We&apos;re a modern fintech company aiming to help people in financial
+          trouble get away from their debts. we&apos;re dedicated to creating a
+          world where financial freedom is within reach for everyone,
+          irrespective of their debt load
         </p>
         <div className="pt-5">
           <Button className={`text-white`}>Book an appointment</Button>

@@ -52,7 +52,7 @@ function SliderSection() {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container mt-5 md:mt-10 w-full lg:w-auto border"
+        className="swiper_container mt-5 md:mt-10 w-full lg:w-auto"
       >
         {data.map((dataItem) => (
           <SwiperSlide
@@ -71,7 +71,7 @@ function SliderSection() {
                   className="rounded-full"
                 />
               </div>
-              <div className="info flex flex-col justify-center items-center capitalize">
+              <div className="info flex gap-3 justify-center items-center capitalize">
                 <span>
                   <i>
                     {' '}
