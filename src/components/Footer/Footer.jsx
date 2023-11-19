@@ -1,8 +1,9 @@
 import React from 'react';
 import { ScaleDiv } from '../index';
 import { navItems, socialLinks } from '../data';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Logo, Gmail, PCall } from '../../assets';
+import { Link } from 'react-scroll';
 
 function Footer() {
   console.log(socialLinks);
@@ -57,15 +58,17 @@ function Footer() {
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <ScaleDiv key={item.name} className={'pl-2'}>
-                  <NavLink
+                  <Link
                     key={item.name}
                     to={item.slug}
+                    smooth={true}
+                    duration={600}
                     className={({ isActive }) =>
                       isActive ? 'border-b-2 border-profBlue pb-2' : ''
                     }
                   >
                     &gt; {item.name}
-                  </NavLink>
+                  </Link>
                 </ScaleDiv>
               ))}
             </div>
