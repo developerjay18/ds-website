@@ -3,19 +3,19 @@ import { FBIcon, WPIcon, YoutubeIcon, InstaIcon } from '../assets';
 const navItems = [
   {
     name: 'Home',
-    slug: '/',
+    slug: 'home',
   },
   {
     name: 'About us',
-    slug: '/about-us',
+    slug: 'about-us',
   },
   {
     name: 'services',
-    slug: '/services',
+    slug: 'services',
   },
   {
     name: 'contact us',
-    slug: '/contact',
+    slug: 'contact',
   },
 ];
 

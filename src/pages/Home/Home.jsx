@@ -10,11 +10,13 @@ import {
   InfoSection,
   ContactSection,
   ListSection,
+  Header
 } from '../../components';
 
 function Home() {
   return (
     <Container>
+      <Header />
       <HeroSection />
       <ProcessSection />
       <ServiceSection />

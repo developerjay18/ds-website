@@ -44,12 +44,12 @@ function StatSection() {
   ];
 
   return (
-    <div className="font-Poppins w-full flex px-5 lg:px-24 py-16 justify-between flex-col md:flex-row flex-wrap gap-12 md:gap-0 lg:gap-0 bg-[#f4f4f4]">
+    <div className="font-Poppins w-full flex px-5 lg:px-24 py-16 justify-between flex-col md:flex-row flex-wrap gap-12 md:gap-0 lg:gap-0 bg-black-gr">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={controls}
         transition={{ duration: 1 }}
-        className="w-full flex justify-between flex-col md:flex-row gap-12 md:gap-0 bg-black-gr rounded-lg"
+        className="w-full flex justify-between flex-col md:flex-row gap-12 md:gap-0 rounded-lg"
       >
         {statsData.map((data) => (
           <div

@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { navItems } from '../data';
 import { Button, ScaleDiv, Logo } from '../index';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
+import { Link } from 'react-scroll';
 
 function Header({ BG }) {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ function Header({ BG }) {
     <header
       className={`
       ${BG ? `${BG}` : 'bg-transparent'}
-          px-5 lg:px-24 py-5  text-white flex items-center justify-between font-Poppins w-full
+          px-5 lg:px-24 py-5  text-white flex items-center justify-between font-Poppins w-full absolute
       `}
     >
       {/* logo | left-side */}
@@ -22,16 +22,18 @@ function Header({ BG }) {
       <div className="right gap-16 items-center hidden lg:flex">
         <div className="nav-items flex gap-8 capitalize">
           {navItems.map((item) => (
-            <ScaleDiv key={item.name}>
-              <NavLink
+            <ScaleDiv key={item.name} className={'cursor-pointer'}>
+              <Link
                 key={item.name}
                 to={item.slug}
                 className={({ isActive }) =>
                   isActive ? 'border-b-2 border-profBlue pb-2' : ''
                 }
+                smooth={true}
+                duration={600}
               >
                 {item.name}
-              </NavLink>
+              </Link>
             </ScaleDiv>
           ))}
         </div>

@@ -9,7 +9,7 @@ function ListSection() {
   return (
     <div className="px-5 lg:px-24 py-16 font-Poppins flex justify-between">
       {/* servies */}
-      <div className="shadow-lg services bg-[#eeeeee] rounded-lg p-5 flex flex-col gap-6">
+      <div className="shadow-lg bg-[#eeeeee] rounded-lg p-5 flex flex-col gap-6">
         {/* heading section */}
         <div className="flex flex-col gap-8 text-white">
           <div

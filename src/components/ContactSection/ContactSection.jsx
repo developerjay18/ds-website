@@ -4,7 +4,7 @@ import { ContactCall } from '../../assets';
 function ContactSection() {
   const [hover, setHover] = useState(false);
   return (
-    <div className="px-5 lg:px-24 py-16 font-Poppins bg-gradient-two text-white">
+    <div className="px-5 lg:px-24 py-16 font-Poppins bg-gradient-two text-white  contact">
       {/* heading section */}
       <div className="px-20 flex flex-col gap-8 text-white">
         <div
