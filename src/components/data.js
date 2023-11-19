@@ -6,12 +6,12 @@ const navItems = [
     slug: 'home',
   },
   {
-    name: 'About us',
-    slug: 'about-us',
-  },
-  {
     name: 'services',
     slug: 'services',
+  },
+  {
+    name: 'About us',
+    slug: 'about-us',
   },
   {
     name: 'contact us',
