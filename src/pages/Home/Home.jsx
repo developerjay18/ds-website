@@ -10,7 +10,8 @@ import {
   InfoSection,
   ContactSection,
   ListSection,
-  Header
+  Header,
+  Footer,
 } from '../../components';
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
       <InfoSection />
       <ContactSection />
       <ListSection />
+      <Footer />
     </Container>
   );
 }
