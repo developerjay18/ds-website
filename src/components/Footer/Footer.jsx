@@ -129,30 +129,30 @@ function Footer() {
         <div className="flex gap-5">
           <span>@decentsettelment.com All Rights reserved.</span>
           <span className="flex gap-3">
-            <Link
+            <NavLink
               to={'/terms-and-conditions'}
               className="text-profBlue hover:text-white"
             >
               Terms and conditions
-            </Link>
+            </NavLink>
             <span>|</span>
-            <Link
+            <NavLink
               to={'/privacy-policy'}
               className="text-profBlue hover:text-white"
             >
               Privacy Policy
-            </Link>
+            </NavLink>
           </span>
         </div>
         <div className="">
           Developed by{' '}
           <span>
-            <Link
+            <NavLink
               to={'https://www.jayraiweb.com'}
               className="text-profBlue hover:text-white"
             >
               JayRai web
-            </Link>
+            </NavLink>
           </span>
         </div>
       </div>
