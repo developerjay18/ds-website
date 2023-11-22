@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ContactCall, Gmail, PCall } from '../../assets';
+import { ContactCall, Gmail, RoundWP } from '../../assets';
+import { Link } from 'react-router-dom';
 
 function ContactSection() {
   const [hover, setHover] = useState(false);
@@ -7,11 +8,7 @@ function ContactSection() {
     <div className="px-5 lg:px-24 py-16 font-Poppins bg-gradient-two text-white  contact">
       {/* heading section */}
       <div className="flex flex-col gap-8 text-white">
-        <div
-          className=" font-bold flex justify-between items-center cursor-pointer"
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-        >
+        <div className=" font-bold flex justify-between items-center cursor-pointer">
           {/* email */}
           <div className="mail text-lightGrey w-[30%]  flex gap-5 border-l-2 pl-2">
             <div className="w-[10%]">
@@ -21,7 +18,14 @@ function ContactSection() {
               <div className="text-2xl uppercase font-semibold">
                 Email us Now
               </div>
-              <div>decentsettelment@gmail.com</div>
+              <Link
+                to={
+                  'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=decentsettlement@gmail.com'
+                }
+                className="text-profBlue hover:text-white"
+              >
+                <div className="font-normal">decentsettelment@gmail.com</div>
+              </Link>
             </div>
           </div>
           {/* heading */}
@@ -30,6 +34,8 @@ function ContactSection() {
               className={`${
                 hover ? 'text-profBlue' : 'text-white'
               } text-4xl capitalize`}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
             >
               contact us
             </h2>
@@ -42,13 +48,17 @@ function ContactSection() {
           {/* call */}
           <div className="call flex gap-5 text-lightGrey w-[30%] justify-end">
             <div className="w-[13%] border-l-2 pl-2">
-              <img src={PCall} alt="call-icon" />
+              <img src={RoundWP} alt="call-icon" />
             </div>
             <div>
               <div className="text-2xl uppercase font-semibold">
                 call us Now
               </div>
-              <div>+91 9824336161</div>
+              <Link to={'tel:+919824336161'}>
+                <div className="font-normal text-profBlue hover:text-white">
+                  +91 9824336161
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -95,7 +105,7 @@ function ContactSection() {
               ></textarea>
               <button
                 type="submit"
-                className="rounded-lg w-[40%] capitalize hover:bg-darkProfBlue bg-profBlue p-3"
+                className="rounded-lg w-[40%] capitalize hover:bg-white bg-profBlue hover:text-mateBlack hover:shadow-lg hover:shadow-profBlue p-3"
               >
                 send message
               </button>

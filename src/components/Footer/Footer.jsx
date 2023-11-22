@@ -2,11 +2,14 @@ import React from 'react';
 import { ScaleDiv, ListSection } from '../index';
 import { navItems, socialLinks } from '../data';
 import { NavLink } from 'react-router-dom';
-import { Logo, Gmail, PCall } from '../../assets';
+import { Logo, Gmail, RoundWP } from '../../assets';
 import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
+import { Link as RLink } from 'react-router-dom';
 
 function Footer() {
-  console.log(socialLinks);
+  const navigate = useNavigate();
+
   return (
     <>
       <ListSection />
@@ -52,7 +55,15 @@ function Footer() {
                 <div className="text-2xl uppercase font-semibold">
                   Email us Now
                 </div>
-                <div>decentsettelment@gmail.com</div>
+                <RLink
+                  to={
+                    'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=decentsettlement@gmail.com'
+                  }
+                >
+                  <div className="hover:text-white text-profBlue">
+                    decentsettelment@gmail.com
+                  </div>
+                </RLink>
               </div>
             </div>
             <div className="nav-items flex flex-col gap-4 capitalize">
@@ -88,13 +99,17 @@ function Footer() {
           <div className="w-[33%] pt-5 flex flex-col gap-10">
             <div className="call  flex gap-5 border-l-2 pl-2">
               <div className="w-[10%]">
-                <img src={PCall} alt="call-icon" />
+                <img src={RoundWP} alt="call-icon" />
               </div>
               <div>
                 <div className="text-2xl uppercase font-semibold">
                   call us Now
                 </div>
-                <div>+91 9824336161</div>
+                <RLink to={'tel:+919824336161'}>
+                  <div className="hover:text-white text-profBlue cursor-pointer">
+                    +91 9824336161
+                  </div>
+                </RLink>
               </div>
             </div>
             <div className="flex flex-col gap-5">
@@ -125,7 +140,7 @@ function Footer() {
                   </textarea>
                   <button
                     type="submit"
-                    className="capitalize rounded-lg w-1/4 ml-1 px-1 py-2 bg-profBlue hover:bg-darkProfBlue text-white"
+                    className="capitalize rounded-lg w-1/4 ml-1 px-1 py-2 bg-profBlue hover:bg-white hover:text-mateBlack text-white hover:shadow-lg hover:shadow-profBlue"
                   >
                     send
                   </button>

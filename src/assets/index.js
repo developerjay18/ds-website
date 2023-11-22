@@ -8,6 +8,7 @@ import PCall from './pcall.png';
 import DSVideo from './DS-video.mp4';
 import ContactCall from './contact-call.svg';
 import ListImage from './list.jpeg';
+import RoundWP from './round-wp.png';
 
 export {
   Logo,
@@ -20,4 +21,5 @@ export {
   DSVideo,
   ContactCall,
   ListImage,
+  RoundWP,
 };
