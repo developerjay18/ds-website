@@ -6,10 +6,11 @@ import { motion } from 'framer-motion';
 
 function HeroSection() {
   return (
-    <div className="bg-hero pt-24 home">
+    <div className="bg-hero home">
+      <Header />
       <div className="text-white font-Poppins">
         {/* opacity cover */}
-        <div className="px-5 lg:px-24 py-16 flex">
+        <div className="px-5 lg:px-24 py-10 flex">
           {/* left section */}
           <div className="left w-[60%] pr-20 flex flex-col gap-10 justify-center">
             <h1 className="capitalize flex flex-col gap-5">

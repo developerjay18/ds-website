@@ -13,7 +13,7 @@ function Header({ BG }) {
     <header
       className={`
       ${BG ? `${BG}` : 'bg-transparent'}
-          px-5 lg:px-24 py-5  text-white flex items-center justify-between font-Poppins w-full absolute
+          px-5 lg:px-24 py-5  text-white flex items-center justify-between font-Poppins w-full
       `}
     >
       {/* logo | left-side */}

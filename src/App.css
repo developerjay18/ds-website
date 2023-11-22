@@ -1,4 +1,17 @@
 /* premium feature */
+.main-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.section {
+  height: auto;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
 /* scrolling feature error happening */
 
 .bg-hero {
