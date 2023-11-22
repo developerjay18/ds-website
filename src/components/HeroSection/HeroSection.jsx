@@ -38,7 +38,7 @@ function HeroSection() {
             </h1>
             <p className="pr-24 text-lightGrey">
               Your Trusted debt relief partner. Yes, Debt settlement is possible
-              embark on your journey to financial freedom today.
+              begin on your journey to financial freedom today.
             </p>
             <motion.div
               className="box"

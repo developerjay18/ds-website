@@ -1,9 +1,10 @@
 import React from 'react';
 import { navItems } from '../data';
-import { Button, ScaleDiv, Logo } from '../index';
+import { Button, ScaleDiv } from '../index';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
 import { Link } from 'react-scroll';
+import { Logo } from '../../assets';
 
 function Header({ BG }) {
   const dispatch = useDispatch();
@@ -17,10 +18,12 @@ function Header({ BG }) {
       `}
     >
       {/* logo | left-side */}
-      <Logo />
+      <div className="image w-[30%]">
+        <img src={Logo} alt="compnay-logo" className="w-[70%]" />
+      </div>
       {/* nav-items | right-side */}
-      <div className="right pr-12 gap-16 items-center hidden lg:flex">
-        <div className="nav-items flex gap-8 capitalize">
+      <div className="right pr-8 gap-16 items-center hidden lg:flex w-[70%]">
+        <div className="nav-items flex gap-10 capitalize w-[80%]">
           {navItems.map((item) => (
             <ScaleDiv key={item.name} className={'cursor-pointer'}>
               <Link
@@ -35,8 +38,8 @@ function Header({ BG }) {
             </ScaleDiv>
           ))}
         </div>
-        <div className="btn">
-          <Button>Whatsapp now</Button>
+        <div className="btn w-[32%]">
+          <Button className={'w-full'}>Whatsapp now</Button>
         </div>
       </div>
 
