@@ -6,8 +6,7 @@ import { motion } from 'framer-motion';
 
 function HeroSection() {
   return (
-    <div className="bg-hero home">
-      <Header />
+    <div className="bg-hero home pt-28 section">
       <div className="text-white font-Poppins">
         {/* opacity cover */}
         <div className="px-5 lg:px-24 py-10 flex">

@@ -14,7 +14,7 @@ function Header({ BG }) {
     <header
       className={`
       ${BG ? `${BG}` : 'bg-transparent'}
-          px-5 lg:px-24 py-5  text-white flex items-center justify-between font-Poppins w-full
+          px-5 lg:px-24 py-5  text-white flex items-center justify-between font-Poppins w-full absolute
       `}
     >
       {/* logo | left-side */}
@@ -22,8 +22,8 @@ function Header({ BG }) {
         <img src={Logo} alt="compnay-logo" className="w-[70%]" />
       </div>
       {/* nav-items | right-side */}
-      <div className="right pr-8 gap-16 items-center hidden lg:flex w-[70%]">
-        <div className="nav-items flex gap-10 capitalize w-[80%]">
+      <div className="right pr-12 gap-16 items-center hidden lg:flex">
+        <div className="nav-items flex gap-10 capitalize">
           {navItems.map((item) => (
             <ScaleDiv key={item.name} className={'cursor-pointer'}>
               <Link
@@ -38,7 +38,7 @@ function Header({ BG }) {
             </ScaleDiv>
           ))}
         </div>
-        <div className="btn w-[32%]">
+        <div className="btn">
           <Button className={'w-full'}>Whatsapp now</Button>
         </div>
       </div>

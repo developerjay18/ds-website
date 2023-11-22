@@ -6,7 +6,7 @@ import { Button } from '../index.js';
 function ServiceSection() {
   const [hover, setHover] = useState(false);
   return (
-    <div className="px-5 lg:px-24 py-16 font-Poppins flex flex-col gap-10 services">
+    <div className="px-5 lg:px-24 py-16 font-Poppins flex flex-col gap-10">
       {/* heading section */}
       <div className="px-20 flex flex-col gap-8 text-white">
         <div
