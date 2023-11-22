@@ -6,7 +6,7 @@ import { Button } from '../index.js';
 function ServiceSection() {
   const [hover, setHover] = useState(false);
   return (
-    <div className="px-5 lg:px-24 py-16 font-Poppins flex flex-col gap-20 services">
+    <div className="px-5 lg:px-24 py-16 font-Poppins flex flex-col gap-10 services">
       {/* heading section */}
       <div className="px-20 flex flex-col gap-8 text-white">
         <div
@@ -29,7 +29,7 @@ function ServiceSection() {
         </div>
       </div>
       {/* cards section */}
-      <div className="flex flex-wrap justify-between gap-10">
+      <div className="flex flex-wrap justify-between">
         {data.map((dataItem) => (
           <ServiceCard
             key={dataItem.title}

@@ -19,16 +19,14 @@ function Header({ BG }) {
       {/* logo | left-side */}
       <Logo />
       {/* nav-items | right-side */}
-      <div className="right gap-16 items-center hidden lg:flex">
+      <div className="right pr-12 gap-16 items-center hidden lg:flex">
         <div className="nav-items flex gap-8 capitalize">
           {navItems.map((item) => (
             <ScaleDiv key={item.name} className={'cursor-pointer'}>
               <Link
                 key={item.name}
                 to={item.slug}
-                className={({ isActive }) =>
-                  isActive ? 'border-b-2 border-profBlue pb-2' : ''
-                }
+                className="text-lg hover:border-b-2 hover:border-profBlue"
                 smooth={true}
                 duration={600}
               >

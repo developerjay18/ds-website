@@ -44,7 +44,7 @@ function StatSection() {
   ];
 
   return (
-    <div className="font-Poppins w-full flex px-5 lg:px-24 py-16 justify-between flex-col md:flex-row flex-wrap gap-12 md:gap-0 lg:gap-0 bg-black-gr">
+    <div className="font-Poppins w-full flex px-5 lg:px-24 py-16 justify-between flex-col md:flex-row flex-wrap gap-12 md:gap-0 lg:gap-0 bg-black-gr stats">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={controls}

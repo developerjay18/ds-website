@@ -57,7 +57,10 @@ function Footer() {
             </h2>
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <ScaleDiv key={item.name} className={'pl-2'}>
+                <ScaleDiv
+                  key={item.name}
+                  className={'pl-2 w-[35%] hover:text-profBlue cursor-pointer'}
+                >
                   <Link
                     key={item.name}
                     to={item.slug}

@@ -6,9 +6,9 @@ import InfoBoxes from './InfoBoxes';
 function InfoSection() {
   const [hover, setHover] = useState(false);
   return (
-    <div className="px-5 lg:px-24 py-16 font-Poppins about-us">
+    <div className="px-5 lg:px-24 pt-16 font-Poppins about-us">
       {/* upper layer */}
-      <div className="rounded-lg flex bg-[#eeeeee] shadow-lg hover:shadow-profBlue cursor-pointer">
+      <div className="rounded-lg flex bg-[#eeeeee] shadow-lg hover:shadow-profBlue cursor-pointer info">
         <div className="text w-1/2 flex flex-col gap-5">
           {/* heading section */}
           <div className="flex flex-col gap-8 text-white pl-5 py-5">

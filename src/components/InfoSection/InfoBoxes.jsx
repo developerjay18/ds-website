@@ -4,7 +4,7 @@ import { Vision, Mission } from '../../assets/about';
 function InfoBoxes() {
   const [hover, setHover] = useState(false);
   return (
-    <div className="py-20 flex flex-col gap-10">
+    <div className="pt-20 pb-14 flex flex-col gap-10">
       {/* vision */}
       <div className="vision shadow-lg bg-[#eeeeee] flex justify-between rounded-lg hover:shadow-profBlue cursor-pointer">
         <div className="image w-[30%]">

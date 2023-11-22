@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 function HeroSection() {
   return (
-    <div className="bg-hero pt-28 home">
+    <div className="bg-hero pt-24 home">
       <div className="text-white font-Poppins">
         {/* opacity cover */}
         <div className="px-5 lg:px-24 py-16 flex">
@@ -51,7 +51,7 @@ function HeroSection() {
           <div className="right w-[40%] flex justify-end">
             <video
               controls
-              className="w-[60%] rounded-3xl hover:shadow-lg hover:shadow-profBlue"
+              className="w-[55%] rounded-3xl hover:shadow-lg hover:shadow-profBlue"
               autoPlay
             >
               <source src={DSVideo} type="video/mp4" />

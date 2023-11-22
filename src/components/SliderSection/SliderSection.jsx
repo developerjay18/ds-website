@@ -12,7 +12,7 @@ import data from './data';
 function SliderSection() {
   const [hover, setHover] = useState(false);
   return (
-    <div className="text-whitePrimary  px-7 md:px-14 py-8 lg:py-14 flex flex-col gap-8 bg-gradient font-Poppins">
+    <div className="text-whitePrimary  px-7 md:px-14 py-8 lg:py-14 flex flex-col gap-8 bg-gradient font-Poppins slider">
       {/* heading section */}
       <div className="px-20 flex flex-col gap-8 text-white">
         <div

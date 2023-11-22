@@ -6,7 +6,7 @@ import data from './data';
 function ProcessSection() {
   const [hover, setHover] = useState(false);
   return (
-    <div className="px-5 lg:px-24 py-16 font-Poppins flex flex-col justify-center items-center gap-8 bg-[#f4f4f4] border-0">
+    <div className="px-5 lg:px-24 py-16 font-Poppins flex flex-col justify-center items-center gap-8 bg-[#f4f4f4] border-0 process">
       {/* heading section */}
       <div className="px-20 flex flex-col gap-8">
         <div
