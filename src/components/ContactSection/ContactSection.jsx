@@ -9,28 +9,26 @@ function ContactSection() {
       {/* heading section */}
       <div className="flex flex-col gap-8 text-white">
         <div className=" font-bold flex flex-col lg:flex-row justify-between items-center cursor-pointer gap-5 lg:gap-0">
-          {/* email */}
-          <div className="mail text-lightGrey lg:w-[30%] w-full  flex gap-5 border-l-2 pl-2">
-            <div className="w-[10%]">
-              <img src={Gmail} alt="mail-icon" />
+          {/*desktop call */}
+          <div className="call hidden lg:flex gap-5 text-lightGrey w-full lg:w-[30%]">
+            <div className="w-[13%] pl-2">
+              <img src={RoundWP} alt="call-icon" />
             </div>
             <div>
               <div className="text-2xl uppercase font-semibold">
-                Email us Now
+                call us Now
               </div>
-              <Link
-                to={
-                  'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=decentsettlement@gmail.com'
-                }
-                className="text-profBlue hover:text-white"
-              >
-                <div className="font-normal">decentsettelment@gmail.com</div>
+              <Link to={'tel:+919824336161'}>
+                <div className="font-normal text-profBlue hover:text-white">
+                  +91 9824336161
+                </div>
               </Link>
             </div>
           </div>
+
           {/* mobile call */}
           <div className="call flex gap-5 text-lightGrey w-full lg:w-[30%] lg:justify-end justify-start lg:hidden">
-            <div className="w-[13%] border-l-2 pl-2">
+            <div className="w-[13%] pl-2">
               <img src={RoundWP} alt="call-icon" />
             </div>
             <div>
@@ -61,19 +59,22 @@ function ContactSection() {
               }`}
             ></div>
           </div>
-          {/*desktop call */}
-          <div className="call hidden lg:flex gap-5 text-lightGrey w-full lg:w-[30%] lg:justify-end justify-start">
-            <div className="w-[13%] border-l-2 pl-2">
-              <img src={RoundWP} alt="call-icon" />
+          {/* email */}
+          <div className="mail text-lightGrey lg:w-[30%] w-full  flex gap-5 pl-2">
+            <div className="w-[10%]">
+              <img src={Gmail} alt="mail-icon" />
             </div>
             <div>
               <div className="text-2xl uppercase font-semibold">
-                call us Now
+                Email us Now
               </div>
-              <Link to={'tel:+919824336161'}>
-                <div className="font-normal text-profBlue hover:text-white">
-                  +91 9824336161
-                </div>
+              <Link
+                to={
+                  'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=decentsettlement@gmail.com'
+                }
+                className="text-profBlue hover:text-white"
+              >
+                <div className="font-normal">decentsettelment@gmail.com</div>
               </Link>
             </div>
           </div>
@@ -84,7 +85,7 @@ function ContactSection() {
         {/* upper section */}
         <div className="upper flex lg:flex-row flex-col w-full justify-between items-center">
           {/* form */}
-          <div className="form w-full lg:w-1/2 flex justify-center">
+          <div className="form w-full lg:w-1/2 flex justify-center lg:justify-start">
             <form
               action="#"
               method="post"
