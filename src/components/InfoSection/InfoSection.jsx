@@ -8,8 +8,8 @@ function InfoSection() {
   return (
     <div className="px-5 lg:px-24 pt-16 font-Poppins about-us">
       {/* upper layer */}
-      <div className="rounded-lg flex bg-[#eeeeee] shadow-lg hover:shadow-profBlue cursor-pointer info">
-        <div className="text w-1/2 flex flex-col gap-5">
+      <div className="rounded-lg flex lg:flex-row flex-col bg-[#eeeeee] shadow-lg hover:shadow-profBlue cursor-pointer info">
+        <div className="text w-full lg:w-1/2 flex flex-col gap-5">
           {/* heading section */}
           <div className="flex flex-col gap-8 text-white pl-5 py-5">
             <div
@@ -20,14 +20,14 @@ function InfoSection() {
               <h2
                 className={`${
                   hover ? 'text-profBlue' : 'text-mateBlack'
-                } capitalize`}
+                } capitalize text-center lg:text-left`}
               >
                 about us
               </h2>
               <div
-                className={`liner h-1 w-[20%] bg-mateBlack ${
+                className={`liner h-1 w-[30%] lg:w-[20%] bg-mateBlack ${
                   hover ? 'bg-profBlue' : 'bg-mateBlack'
-                }`}
+                } mx-auto lg:mx-0`}
               ></div>
             </div>
           </div>
@@ -54,11 +54,11 @@ function InfoSection() {
             <Button className={`text-white`}>Book an appointment</Button>
           </div>
         </div>
-        <div className="image w-1/2">
+        <div className="image w-full lg:w-1/2">
           <img
             src={Image.About}
             alt="about-image"
-            className="rounded-r-lg h-full object-cover"
+            className="rounded-b-lg lg:rounded-r-lg h-full object-cover"
           />
         </div>
       </div>

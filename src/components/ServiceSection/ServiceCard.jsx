@@ -3,7 +3,7 @@ import React from 'react';
 function ServiceCard({ url, title, content }) {
   return (
     <>
-      <div className="w-[24%] shadow-lg flex flex-col justify-center items-center cursor-pointer hover:shadow-profBlue rounded-lg bg-[#eeeeee] gap-y-2">
+      <div className="lg:w-[24%] shadow-lg flex flex-col justify-center items-center cursor-pointer hover:shadow-profBlue rounded-lg bg-[#eeeeee] gap-y-2 my-5 lg:my-0">
         <div className="overflow-hidden h-[40%] rounded-lg">
           <img
             src={url}

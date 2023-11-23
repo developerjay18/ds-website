@@ -6,19 +6,19 @@ function InfoBoxes() {
   return (
     <div className="pt-20 pb-14 flex flex-col gap-10">
       {/* vision */}
-      <div className="vision shadow-lg bg-[#eeeeee] flex justify-between rounded-lg hover:shadow-profBlue cursor-pointer">
-        <div className="image w-[30%]">
+      <div className="vision shadow-lg bg-[#eeeeee] flex lg:flex-row flex-col justify-between rounded-lg hover:shadow-profBlue cursor-pointer">
+        <div className="image w-full lg:w-[30%]">
           <img
             src={Vision}
             alt="vision-image"
-            className="rounded-l-lg h-full object-cover"
+            className="rounded-t-lg lg:rounded-l-lg h-full object-cover"
           />
         </div>
-        <div className="text w-[70%] p-5 flex flex-col justify-center">
+        <div className="text w-full lg:w-[70%] p-5 flex flex-col justify-center">
           {/* heading section */}
           <div className="flex flex-col gap-8 text-white pb-5">
             <div
-              className="text-4xl font-bold flex flex-col justify-start gap-4 cursor-pointer"
+              className="text-3xl lg:text-4xl font-bold flex flex-col justify-start gap-4 cursor-pointer"
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
             >
@@ -48,12 +48,12 @@ function InfoBoxes() {
         </div>
       </div>
       {/* mission */}
-      <div className="mission shadow-lg bg-[#eeeeee] flex justify-between rounded-lg hover:shadow-profBlue cursor-pointer">
-        <div className="text w-[70%] p-5 flex flex-col">
+      <div className="mission shadow-lg bg-[#eeeeee] flex lg:flex-row flex-col justify-between rounded-lg hover:shadow-profBlue cursor-pointer">
+        <div className="text lg:w-[70%] p-5 flex flex-col">
           {/* heading section */}
           <div className="flex flex-col gap-8 text-white pb-5">
             <div
-              className="text-4xl font-bold flex flex-col justify-start gap-4 cursor-pointer"
+              className="text-3xl lg:text-4xl font-bold flex flex-col justify-start gap-4 cursor-pointer lg:text-left"
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
             >
@@ -67,7 +67,7 @@ function InfoBoxes() {
               <div
                 className={`liner h-1 w-[20%] bg-mateBlack ${
                   hover ? 'bg-profBlue' : 'bg-mateBlack'
-                }`}
+                } lg:mx-0`}
               ></div>
             </div>
           </div>
@@ -79,11 +79,11 @@ function InfoBoxes() {
             freedom.
           </p>
         </div>
-        <div className="image w-[30%]">
+        <div className="image w-full lg:w-[30%]">
           <img
             src={Mission}
             alt="Mission-image"
-            className="rounded-r-lg object-cover"
+            className="rounded-b-lg lg:rounded-r-lg object-cover"
           />
         </div>
       </div>

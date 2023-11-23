@@ -12,16 +12,16 @@ const FAQsSection = () => {
   return (
     <div className="font-Poppins px-5 lg:px-24 py-16 flex flex-col gap-10">
       {/* heading section */}
-      <div className="px-20 flex flex-col gap-8 text-white">
+      <div className="lg:px-20 flex flex-col gap-8 text-white">
         <div
-          className="text-4xl font-bold flex flex-col justify-center items-center gap-4 cursor-pointer"
+          className="text-3xl lg:text-4xl font-bold flex flex-col justify-center items-center gap-4 cursor-pointer"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
           <h2
             className={`${
               hover ? 'text-profBlue' : 'text-mateBlack'
-            } capitalize`}
+            } capitalize text-center`}
           >
             frequently asked questions
           </h2>
@@ -34,7 +34,7 @@ const FAQsSection = () => {
       </div>
       {/* FAQs section */}
       <div className="flex justify-center">
-        <div className="faq w-[60%] flex flex-col gap-2">
+        <div className="faq lg:w-[60%] flex flex-col gap-2">
           {faqItems.map((item, index) => (
             <div
               key={index}

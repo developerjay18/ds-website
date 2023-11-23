@@ -14,9 +14,9 @@ function SliderSection() {
   return (
     <div className="text-whitePrimary  px-7 md:px-14 py-8 lg:py-14 flex flex-col gap-8 bg-gradient font-Poppins slider">
       {/* heading section */}
-      <div className="px-20 flex flex-col gap-8 text-white">
+      <div className="lg:px-20 flex flex-col gap-8 text-white">
         <div
-          className="text-4xl font-bold flex flex-col justify-center items-center gap-4 cursor-pointer"
+          className="text-3xl lg:text-4xl font-bold flex flex-col justify-center items-center gap-4 cursor-pointer"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
@@ -26,7 +26,7 @@ function SliderSection() {
             client testimonials
           </h2>
           <div
-            className={`liner h-1 w-[20%] ${
+            className={`liner h-1 w-[45%] lg:w-[20%] ${
               hover ? 'bg-profBlue' : 'bg-white'
             }`}
           ></div>

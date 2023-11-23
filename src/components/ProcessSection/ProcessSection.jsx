@@ -8,16 +8,16 @@ function ProcessSection() {
   return (
     <div className="px-5 lg:px-24 py-16 font-Poppins flex flex-col justify-center items-center gap-8 bg-[#f4f4f4] border-0 process section">
       {/* heading section */}
-      <div className="px-20 flex flex-col gap-8">
+      <div className="lg:px-20 flex flex-col gap-8">
         <div
-          className="text-4xl font-bold flex flex-col justify-center items-center gap-4 cursor-pointer"
+          className="text-3xl lg:text-4xl font-bold flex flex-col justify-center items-center gap-4 cursor-pointer"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
           <h2
             className={`${
               hover ? 'text-profBlue' : 'text-mateBlack'
-            } capitalize`}
+            } capitalize text-center lg:text-start`}
           >
             How our debt settlement relief program works?
           </h2>

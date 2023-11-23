@@ -18,7 +18,7 @@ function Header({ BG }) {
       `}
     >
       {/* logo | left-side */}
-      <div className="image w-[30%]">
+      <div className="image w-[70%] lg:w-[30%]">
         <img src={Logo} alt="compnay-logo" className="w-[70%]" />
       </div>
       {/* nav-items | right-side */}

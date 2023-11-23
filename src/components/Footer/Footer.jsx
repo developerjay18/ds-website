@@ -4,19 +4,16 @@ import { navItems, socialLinks } from '../data';
 import { NavLink } from 'react-router-dom';
 import { Logo, Gmail, RoundWP } from '../../assets';
 import { Link } from 'react-scroll';
-import { useNavigate } from 'react-router-dom';
 import { Link as RLink } from 'react-router-dom';
 
 function Footer() {
-  const navigate = useNavigate();
-
   return (
     <>
       <ListSection />
       <footer className="px-5 lg:px-24 py-5 font-Poppins flex justify-between gap-10 text-lightGrey flex-col bg-black-gr">
-        <div className="upper-section flex justify-between gap-10">
+        <div className="upper-section flex lg:flex-row flex-col justify-between gap-10">
           {/* tier-1 */}
-          <div className="w-[33%] flex flex-col bg-[#333333] p-5 rounded-md gap-2">
+          <div className=" w-full lg:w-[33%] flex flex-col bg-[#333333] p-5 rounded-md gap-2">
             <div className="image">
               <img src={Logo} alt="compnay-logo" className="w-[70%]" />
             </div>
@@ -46,7 +43,7 @@ function Footer() {
           </div>
 
           {/* tier-2 */}
-          <div className="w-[30%] flex flex-col gap-10 pt-5">
+          <div className="lg:w-[30%] flex flex-col gap-10 pt-5">
             <div className="mail  flex gap-5 border-l-2 pl-2">
               <div className="w-[10%]">
                 <img src={Gmail} alt="mail-icon" />
@@ -96,7 +93,7 @@ function Footer() {
           </div>
 
           {/* tier-3 */}
-          <div className="w-[33%] pt-5 flex flex-col gap-10">
+          <div className="w-full lg:w-[33%] pt-5 flex flex-col gap-10">
             <div className="call  flex gap-5 border-l-2 pl-2">
               <div className="w-[10%]">
                 <img src={RoundWP} alt="call-icon" />
@@ -120,7 +117,7 @@ function Footer() {
                 <form
                   action="#"
                   method="post"
-                  className="flex flex-col gap-3 w-[80%] text-mateBlack"
+                  className="flex flex-col gap-3 lg:w-[80%] text-mateBlack"
                 >
                   <input
                     type="email"
@@ -149,10 +146,10 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="lower-section flex justify-between">
-          <div className="flex gap-5">
+        <div className="lower-section flex justify-between lg:flex-row flex-col">
+          <div className="flex gap-2 lg:gap-5 lg:flex-row flex-col">
             <span>@decentsettelment.com All Rights reserved.</span>
-            <span className="flex gap-3">
+            <span className="flex gap-3 justify-center">
               <NavLink
                 to={'/terms-and-conditions'}
                 className="text-profBlue hover:text-white"
@@ -168,7 +165,7 @@ function Footer() {
               </NavLink>
             </span>
           </div>
-          <div className="">
+          <div className="pt-5 lg:pt-0 text-center lg:text-left">
             Developed by{' '}
             <span>
               <NavLink

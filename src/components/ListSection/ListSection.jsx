@@ -7,13 +7,13 @@ function ListSection() {
   const [hover, setHover] = useState(false);
   const [hoverTwo, setHoverTwo] = useState(false);
   return (
-    <div className="px-5 lg:px-24 py-16 font-Poppins flex justify-between">
+    <div className="px-5 lg:px-24 py-16 font-Poppins flex lg:flex-row flex-col justify-between gap-7 lg:gap-0">
       {/* servies */}
       <div className="shadow-lg bg-[#eeeeee] rounded-lg p-5 flex flex-col gap-6">
         {/* heading section */}
-        <div className="flex flex-col gap-8 text-white">
+        <div className="flex flex-col lg:gap-8 text-white">
           <div
-            className="text-4xl font-bold flex flex-col justify-start items-start gap-4 cursor-pointer"
+            className=" text-3xl lg:text-4xl font-bold flex flex-col justify-start items-start gap-3 lg:gap-4 cursor-pointer"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
@@ -25,7 +25,7 @@ function ListSection() {
               services
             </h2>
             <div
-              className={`liner h-1 w-[60%] bg-mateBlack ${
+              className={`liner h-1 w-[30%] lg:w-[60%] bg-mateBlack ${
                 hover ? 'bg-profBlue' : 'bg-mateBlack'
               }`}
             ></div>
@@ -59,7 +59,7 @@ function ListSection() {
         {/* heading section */}
         <div className="flex flex-col gap-8 text-white">
           <div
-            className="text-4xl font-bold flex flex-col justify-start items-start gap-4 cursor-pointer"
+            className="text-3xl lg:text-4xl font-bold flex flex-col justify-start items-start gap-3 lg:gap-4 cursor-pointer"
             onMouseEnter={() => setHoverTwo(true)}
             onMouseLeave={() => setHoverTwo(false)}
           >
@@ -71,7 +71,7 @@ function ListSection() {
               resources
             </h2>
             <div
-              className={`liner h-1 w-[60%] bg-mateBlack ${
+              className={`liner h-1 w-[35%] lg:w-[60%] bg-mateBlack ${
                 hoverTwo ? 'bg-profBlue' : 'bg-mateBlack'
               }`}
             ></div>
@@ -93,8 +93,8 @@ function ListSection() {
         </ul>
       </div>
       {/* extra */}
-      <div className="shadow-lg hover:shadow-profBlue w-[50%] bg-mateBlack px-5 py-4 rounded-lg text-lightGrey flex flex-col gap-5 cursor-pointer">
-        <div className="w-[50%]">
+      <div className="shadow-lg hover:shadow-profBlue w-full lg:w-[50%] bg-mateBlack px-5 py-4 rounded-lg text-lightGrey flex flex-col gap-5 cursor-pointer">
+        <div className=" w-[80%] lg:w-[50%]">
           <img src={Logo} alt="logo" className="" />
         </div>
         <p>

@@ -8,9 +8,9 @@ function ContactSection() {
     <div className="px-5 lg:px-24 py-16 font-Poppins bg-gradient-two text-white  contact">
       {/* heading section */}
       <div className="flex flex-col gap-8 text-white">
-        <div className=" font-bold flex justify-between items-center cursor-pointer">
+        <div className=" font-bold flex flex-col lg:flex-row justify-between items-center cursor-pointer gap-5 lg:gap-0">
           {/* email */}
-          <div className="mail text-lightGrey w-[30%]  flex gap-5 border-l-2 pl-2">
+          <div className="mail text-lightGrey lg:w-[30%] w-full  flex gap-5 border-l-2 pl-2">
             <div className="w-[10%]">
               <img src={Gmail} alt="mail-icon" />
             </div>
@@ -25,6 +25,22 @@ function ContactSection() {
                 className="text-profBlue hover:text-white"
               >
                 <div className="font-normal">decentsettelment@gmail.com</div>
+              </Link>
+            </div>
+          </div>
+          {/* mobile call */}
+          <div className="call flex gap-5 text-lightGrey w-full lg:w-[30%] lg:justify-end justify-start lg:hidden">
+            <div className="w-[13%] border-l-2 pl-2">
+              <img src={RoundWP} alt="call-icon" />
+            </div>
+            <div>
+              <div className="text-2xl uppercase font-semibold">
+                call us Now
+              </div>
+              <Link to={'tel:+919824336161'}>
+                <div className="font-normal text-profBlue hover:text-white">
+                  +91 9824336161
+                </div>
               </Link>
             </div>
           </div>
@@ -45,8 +61,8 @@ function ContactSection() {
               }`}
             ></div>
           </div>
-          {/* call */}
-          <div className="call flex gap-5 text-lightGrey w-[30%] justify-end">
+          {/*desktop call */}
+          <div className="call hidden lg:flex gap-5 text-lightGrey w-full lg:w-[30%] lg:justify-end justify-start">
             <div className="w-[13%] border-l-2 pl-2">
               <img src={RoundWP} alt="call-icon" />
             </div>
@@ -66,13 +82,13 @@ function ContactSection() {
       {/* main conatiner */}
       <div className="flex justify-between pt-10 items-center flex-col w-full">
         {/* upper section */}
-        <div className="upper flex w-full justify-between items-center">
+        <div className="upper flex lg:flex-row flex-col w-full justify-between items-center">
           {/* form */}
-          <div className="form w-1/2 flex">
+          <div className="form w-full lg:w-1/2 flex justify-center">
             <form
               action="#"
               method="post"
-              className="flex flex-col gap-5 w-[80%] justify-start"
+              className="flex flex-col gap-5 w-full lg:w-[80%] justify-start"
             >
               <input
                 type="text"
@@ -112,7 +128,7 @@ function ContactSection() {
             </form>
           </div>
           {/* image */}
-          <div className="image w-[40%]">
+          <div className="image w-full pt-10 lg:pt-0 lg:w-[40%]">
             <img src={ContactCall} alt="contact-svg" />
           </div>
         </div>
