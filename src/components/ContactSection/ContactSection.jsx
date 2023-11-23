@@ -59,8 +59,8 @@ function ContactSection() {
               }`}
             ></div>
           </div>
-          {/* email */}
-          <div className="mail text-lightGrey lg:w-[30%] w-full  flex gap-5 pl-2">
+          {/* mobile email */}
+          <div className="mail text-lightGrey lg:w-[30%] w-full lg:justify-end  flex gap-5 pl-2 lg:hidden">
             <div className="w-[10%]">
               <img src={Gmail} alt="mail-icon" />
             </div>
@@ -76,6 +76,25 @@ function ContactSection() {
               >
                 <div className="font-normal">decentsettelment@gmail.com</div>
               </Link>
+            </div>
+          </div>
+          {/* desktop email */}
+          <div className="mail text-lightGrey lg:w-[30%] w-full lg:justify-end  lg:flex gap-5 pl-2 hidden">
+            <div>
+              <div className="text-2xl text-end uppercase font-semibold">
+                Email us Now
+              </div>
+              <Link
+                to={
+                  'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=decentsettlement@gmail.com'
+                }
+                className="text-profBlue hover:text-white"
+              >
+                <div className="font-normal">decentsettelment@gmail.com</div>
+              </Link>
+            </div>
+            <div className="w-[10%]">
+              <img src={Gmail} alt="mail-icon" />
             </div>
           </div>
         </div>
