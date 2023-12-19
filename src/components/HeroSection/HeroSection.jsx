@@ -47,7 +47,7 @@ function HeroSection() {
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}
             >
               <Link to={WPNUM}>
-                <Button className={'w-[62%] lg:w-[35%]'}>
+                <Button className={'w-full lg:w-[35%]'}>
                   Book an appointment
                 </Button>
               </Link>

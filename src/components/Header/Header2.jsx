@@ -1,5 +1,5 @@
 import React from 'react';
-import { navItems, navItems2 } from '../data';
+import { navItems2 } from '../data';
 import { Button, ScaleDiv } from '../index';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
