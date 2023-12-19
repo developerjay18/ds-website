@@ -16,6 +16,9 @@ import ContactSection from './ContactSection/ContactSection';
 import ListSection from './ListSection/ListSection';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsAndCond from './TermsAndCond';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
+import Footer2 from './Footer/Footer2';
+import Header2 from './Header/Header2';
 
 export {
   Header,
@@ -35,5 +38,8 @@ export {
   ContactSection,
   ListSection,
   TermsAndCond,
-  PrivacyPolicy
+  PrivacyPolicy,
+  ScrollToTop,
+  Footer2,
+  Header2,
 };

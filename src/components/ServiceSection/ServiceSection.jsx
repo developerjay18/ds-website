@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ServiceCard from './ServiceCard';
 import data from './data.js';
 import { Button } from '../index.js';
+import { Link } from 'react-router-dom';
+import { WPNUM } from '../redirectons.js';
 
 function ServiceSection() {
   const [hover, setHover] = useState(false);
@@ -41,9 +43,11 @@ function ServiceSection() {
       </div>
 
       {/* button section */}
-      <Button className={`text-white py-4 lg:py-3 w-[63%] lg:w-[20%] mx-auto`}>
-        Book An appointment
-      </Button>
+      <Link to={WPNUM} className="mx-auto  w-[63%] lg:w-[20%]">
+        <Button className={`text-white py-4 lg:py-3 mx-auto`}>
+          Book An appointment
+        </Button>
+      </Link>
     </div>
   );
 }

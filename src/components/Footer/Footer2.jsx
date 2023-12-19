@@ -1,12 +1,11 @@
 import React from 'react';
 import { ScaleDiv, ListSection } from '../index';
-import { navItems, socialLinks } from '../data';
+import { navItems2, socialLinks } from '../data';
 import { NavLink } from 'react-router-dom';
 import { Logo, Gmail, RoundWP } from '../../assets';
-import { Link } from 'react-scroll';
 import { Link as RLink } from 'react-router-dom';
 
-function Footer() {
+function Footer2() {
   return (
     <>
       <ListSection />
@@ -70,24 +69,16 @@ function Footer() {
                 Useful links
               </h2>
               <div className="flex flex-col gap-4">
-                {navItems.map((item) => (
+                {navItems2.map((item, index) => (
                   <ScaleDiv
                     key={item.name}
                     className={
                       'pl-2 w-[35%] hover:text-profBlue cursor-pointer'
                     }
                   >
-                    <Link
-                      key={item.name}
-                      to={item.slug}
-                      smooth={true}
-                      duration={600}
-                      className={({ isActive }) =>
-                        isActive ? 'border-b-2 border-profBlue pb-2' : ''
-                      }
-                    >
+                    <RLink to={item.slug} key={index}>
                       &gt; {item.name}
-                    </Link>
+                    </RLink>
                   </ScaleDiv>
                 ))}
               </div>
@@ -184,4 +175,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer2;

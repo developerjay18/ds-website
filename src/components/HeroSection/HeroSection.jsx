@@ -3,6 +3,8 @@ import { DSVideo } from '../../assets';
 import { Button, Header } from '../index';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { WPNUM } from '../redirectons';
 
 function HeroSection() {
   return (
@@ -44,9 +46,11 @@ function HeroSection() {
               whileTap={{ scale: 0.9 }}
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}
             >
-              <Button className={'w-[62%] lg:w-[35%]'}>
-                Book an appointment
-              </Button>
+              <Link to={WPNUM}>
+                <Button className={'w-[62%] lg:w-[35%]'}>
+                  Book an appointment
+                </Button>
+              </Link>
             </motion.div>
           </div>
           {/* right section */}

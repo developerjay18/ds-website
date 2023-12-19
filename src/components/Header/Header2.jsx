@@ -1,5 +1,5 @@
 import React from 'react';
-import { navItems } from '../data';
+import { navItems, navItems2 } from '../data';
 import { Button, ScaleDiv } from '../index';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleState } from '../../store/stateSlice';
@@ -8,7 +8,7 @@ import { Logo } from '../../assets';
 import { Link as DLink } from 'react-router-dom';
 import { WPNUM } from '../redirectons';
 
-function Header({ BG }) {
+function Header2({ BG }) {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.menuClick);
 
@@ -28,17 +28,15 @@ function Header({ BG }) {
       {/* nav-items | right-side */}
       <div className="right pr-12 gap-16 items-center hidden lg:flex">
         <div className="nav-items flex gap-10 capitalize">
-          {navItems.map((item) => (
-            <ScaleDiv key={item.name} className={'cursor-pointer'}>
-              <Link
-                key={item.name}
+          {navItems2.map((item,index) => (
+            <ScaleDiv key={index} className={'cursor-pointer'}>
+              <DLink
                 to={item.slug}
+                key={index}
                 className="text-lg hover:border-b-2 hover:border-profBlue"
-                smooth={true}
-                duration={600}
               >
                 {item.name}
-              </Link>
+              </DLink>
             </ScaleDiv>
           ))}
         </div>
@@ -64,4 +62,4 @@ function Header({ BG }) {
   );
 }
 
-export default Header;
+export default Header2;

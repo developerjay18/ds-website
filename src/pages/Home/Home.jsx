@@ -11,11 +11,13 @@ import {
   ContactSection,
   Footer,
   Header,
+  ScrollToTop,
 } from '../../components';
 
 function Home() {
   return (
     <Container>
+      <ScrollToTop />
       <Header />
       <HeroSection />
       <ProcessSection />

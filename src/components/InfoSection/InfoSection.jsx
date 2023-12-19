@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import * as Image from '../../assets/about';
 import { Button } from '../index';
 import InfoBoxes from './InfoBoxes';
+import { Link } from 'react-router-dom';
+import { WPNUM } from '../redirectons';
 
 function InfoSection() {
   const [hover, setHover] = useState(false);
@@ -50,9 +52,11 @@ function InfoSection() {
             </p>
           </div>
           {/* button */}
-          <div className="px-5 pb-5">
-            <Button className={`text-white`}>Book an appointment</Button>
-          </div>
+          <Link to={WPNUM}>
+            <div className="px-5 pb-5">
+              <Button className={`text-white`}>Book an appointment</Button>
+            </div>
+          </Link>
         </div>
         <div className="image w-full lg:w-1/2">
           <img

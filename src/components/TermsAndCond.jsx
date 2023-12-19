@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Footer } from '.';
+import { Footer2 } from '.';
 
 function TermsAndCond() {
   const [hover, setHover] = useState(false);
@@ -69,7 +69,7 @@ function TermsAndCond() {
         </div>
       </div>
       {/* footer sec */}
-      <Footer />
+      <Footer2 />
     </>
   );
 }

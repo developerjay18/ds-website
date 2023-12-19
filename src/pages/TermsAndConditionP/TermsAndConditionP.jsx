@@ -1,10 +1,17 @@
 import React from 'react';
-import { Header, TermsAndCond, Container } from '../../components';
+import {
+  Header,
+  TermsAndCond,
+  Container,
+  ScrollToTop,
+  Header2,
+} from '../../components';
 
 function TermsAndConditionP() {
   return (
     <Container>
-      <Header BG="bg-black-gr" />
+      <ScrollToTop />
+      <Header2 BG="bg-black-gr" />
       <TermsAndCond />
     </Container>
   );

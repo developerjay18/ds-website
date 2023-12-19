@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { services, resources } from './data';
 import { ScaleDiv, Button } from '../index';
 import { Logo } from '../../assets';
+import { Link } from 'react-router-dom';
+import { WPNUM } from '../redirectons';
 
 function ListSection() {
   const [hover, setHover] = useState(false);
@@ -103,9 +105,11 @@ function ListSection() {
           world where financial freedom is within reach for everyone,
           irrespective of their debt load
         </p>
-        <div className="pt-5">
-          <Button className={`text-white`}>Book an appointment</Button>
-        </div>
+        <Link to={WPNUM}>
+          <div className="pt-5">
+            <Button className={`text-white`}>Book an appointment</Button>
+          </div>
+        </Link>
       </div>
     </div>
   );

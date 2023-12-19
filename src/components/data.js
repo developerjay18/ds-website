@@ -19,6 +19,25 @@ const navItems = [
   },
 ];
 
+const navItems2 = [
+  {
+    name: 'Home',
+    slug: '/',
+  },
+  {
+    name: 'services',
+    slug: '/',
+  },
+  {
+    name: 'About us',
+    slug: '/',
+  },
+  {
+    name: 'contact us',
+    slug: '/',
+  },
+];
+
 const socialLinks = [
   {
     imageURL: FBIcon,
@@ -34,7 +53,7 @@ const socialLinks = [
   },
   {
     imageURL: WPIcon,
-    slug: 'https://wa.me/919824336161',
+    slug: 'https://wa.me/+919824336161',
   },
 ];
 
@@ -56,4 +75,4 @@ const resources = [
   'Bad Credit CIBIL Score',
 ];
 
-export { navItems, socialLinks, services, resources };
+export { navItems, socialLinks, services, resources, navItems2 };

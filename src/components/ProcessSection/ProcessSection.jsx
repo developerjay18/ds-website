@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ProcessCard from './ProcessCard';
 import { Button } from '../index';
 import data from './data';
+import { WPNUM } from '../redirectons';
+import { Link } from 'react-router-dom';
 
 function ProcessSection() {
   const [hover, setHover] = useState(false);
@@ -47,7 +49,9 @@ function ProcessSection() {
         ))}
       </div>
       {/* appointment section */}
+      <Link to={WPNUM}>
       <Button className={`text-white mt-3`}>Book an appointment</Button>
+      </Link>
     </div>
   );
 }

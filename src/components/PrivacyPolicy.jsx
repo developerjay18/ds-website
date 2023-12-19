@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Footer } from './index';
+import { Footer2 } from './index';
 
 function PrivacyPolicy() {
   const [hover, setHover] = useState(false);
@@ -53,7 +53,7 @@ function PrivacyPolicy() {
         </div>
       </div>
       {/* footer */}
-      <Footer />
+      <Footer2 />
     </>
   );
 }
